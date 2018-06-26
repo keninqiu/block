@@ -1,29 +1,25 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="isHandset ? 'dialog' : 'navigation'"
-    [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
-    [opened]="!(isHandset | async)!.matches">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="(isHandset | async)!.matches">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'><span><button class="btn-nav" mat-button>Home</button></span></a></li>
+   <li><a href='#'><span><button class="btn-nav" mat-button>Services</button></span></a></li>
+   <li><a href='#'><span><button class="btn-nav" mat-button>Porfolio</button></span></a></li>
+   <li><a href='#'><span><button class="btn-nav" mat-button>FAQ</button></span></a></li>
+   <li class='last'><a href='#'><span><button class="btn-nav" mat-button>Contact</button></span></a></li>
+
+   <li class="btn-setup"><span>
+    <button class="btn-nav" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        English
       </button>
-      <span>Application Title</span>
-    </mat-toolbar>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+      <button mat-menu-item>
+        中文
+      </button>
+    </mat-menu>
+  </span></li>
+</ul>
+
+
+</div>
