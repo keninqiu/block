@@ -14,8 +14,9 @@ import { PorfolioComponent } from './porfolio/porfolio.component';
 import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
+  {path:'',redirectTo:'index', pathMatch: 'full' },
   { path: 'top-nav', component: TopNavComponent },
-  { path: 'intro', component: IntroComponent },
+  { path: 'index', component: IntroComponent },
   { path: 'services', component: FeatureComponent },
   { path: 'porfolio', component: PorfolioComponent },
   { path: 'contact', component: ContactComponent },

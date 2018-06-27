@@ -2466,7 +2466,7 @@ ul.grid__list--fmenu li {
   float:left; 
   text-align:right;
 	position:absolute;
-	bottom:0;
+	bottom:20px;
 	left:5%;
 	z-index:222;
 }

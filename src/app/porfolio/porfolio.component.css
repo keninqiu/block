@@ -1,0 +1,25 @@
+.example-card {
+	width:100%;
+	display: inline-block;
+	margin: 3px;
+
+}
+
+@media screen and (min-width: 1024px) {
+	.example-card {
+		width:28%;
+	}	
+}
+
+@media screen and (min-width: 680px) and (max-width: 1024px) {
+	.example-card {
+		width:40%;
+	}	
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+}

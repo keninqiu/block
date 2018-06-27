@@ -1,9 +1,9 @@
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'><span><button class="btn-nav" mat-button>Home</button></span></a></li>
-   <li><a href='#'><span><button class="btn-nav" mat-button>Services</button></span></a></li>
-   <li><a href='#'><span><button class="btn-nav" mat-button>Porfolio</button></span></a></li>
-   <li class='last'><a href='#'><span><button class="btn-nav" mat-button>Contact</button></span></a></li>
+   <li  routerLink='/index' routerLinkActive="active"><a><span><button class="btn-nav" mat-button>Home</button></span></a></li>
+   <li routerLink='/services' routerLinkActive="active"><a><span><button class="btn-nav" mat-button>Services</button></span></a></li>
+   <li routerLink='/porfolio' routerLinkActive="active"><a ><span><button class="btn-nav" mat-button>Porfolio</button></span></a></li>
+   <li routerLink='/contact' routerLinkActive="active"><a ><span><button class="btn-nav" mat-button>Contact</button></span></a></li>
 
    <li class="btn-setup"><span>
     <button class="btn-nav" mat-icon-button [matMenuTriggerFor]="menu">
