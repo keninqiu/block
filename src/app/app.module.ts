@@ -8,16 +8,28 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { RouterModule, Routes } from '@angular/router';
+import { IntroComponent } from './intro/intro.component';
+import { FeatureComponent } from './feature/feature.component';
+import { PorfolioComponent } from './porfolio/porfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: 'top-nav', component: TopNavComponent },
+  { path: 'intro', component: IntroComponent },
+  { path: 'services', component: FeatureComponent },
+  { path: 'porfolio', component: PorfolioComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    TopNavComponent
+    TopNavComponent,
+    IntroComponent,
+    FeatureComponent,
+    PorfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

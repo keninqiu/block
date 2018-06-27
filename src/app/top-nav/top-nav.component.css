@@ -47,9 +47,6 @@
   transition: color .25s;
 }
 
-#cssmenu ul li a:hover {
-  color: #333333;
-}
 #cssmenu ul li a:hover:before {
   width: 100%;
 }
@@ -73,9 +70,7 @@
 #cssmenu ul li:last-child > a:after {
   display: none;
 }
-#cssmenu ul li.active a {
-  color: #333333;
-}
+
 #cssmenu ul li.active a:before {
   width: 100%;
 }
